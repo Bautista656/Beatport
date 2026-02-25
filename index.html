@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beatport UI Clone - Práctica 3 versonamiento</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="logo" title="Logo">
+        <span class="logo-mark">b</span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#">Genres <span>▾</span></a>
+        <a href="#">Dig Deeper</a>
+        <a href="#">DJ App <span class="ext">↗</span></a>
+        <a href="#">Beatportal <span class="ext">↗</span></a>
+        <a href="#">For Artists & Labels <span class="ext">↗</span></a>
+        <a href="#">Events <span>▾</span></a>
+      </nav>
+    </div>
+
+    <div class="topbar-right">
+      <div class="search-box">
+        <span class="search-icon">⌕</span>
+        <input type="text" placeholder="Buscar" />
+      </div>
+
+      <button class="stream-btn">Agregar streaming</button>
+
+      <button class="icon-btn avatar-btn" title="Perfil">
+        <span class="avatar-circle"></span>
+      </button>
+
+      <button class="icon-btn counter-btn" title="Notificaciones">0</button>
+      <button class="icon-btn" title="Carrito">🛒</button>
+    </div>
+  </header>
+
+  <!-- MAIN LAYOUT -->
+  <div class="app-shell">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar-left">
+      <ul class="side-menu">
+        <li><a href="#"><span class="side-ico">♡</span> Mi Beatport</a></li>
+        <li><a href="#"><span class="side-ico">☰</span> Colección</a></li>
+        <li><a href="#"><span class="side-ico">⇩</span> Descargas</a></li>
+        <li><a href="#"><span class="side-ico">▷</span> Listas de musica 2026</a></li>
+      </ul>
+
+      <button class="playlist-btn">+ Crear Lista De Reproducción</button>
+    </aside>
+
+    <!-- CENTER CONTENT -->
+    <main class="main-content">
+      <div class="category-tabs">
+        <button class="tab active">Electronic</button>
+        <button class="tab">Open Format</button>
+      </div>
+
+      <section class="content-grid">
+        <!-- FEATURED -->
+        <section class="featured-block">
+          <h2>Novedades en Beatport</h2>
+
+          <div class="featured-card">
+            <span class="badge">EXCLUSIVO</span>
+            <div class="album-frame">
+              <div class="album-art">
+                <div class="album-overlay-text">
+                  <div class="album-title">THIS MOMENT</div>
+                  <div class="album-sub">Hyenah feat. Mici</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-dots">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span class="active"></span>
+          </div>
+        </section>
+
+        <!-- DJ CHARTS -->
+        <section class="dj-charts">
+          <div class="section-head">
+            <h2>DJ Charts</h2>
+            <div class="arrow-controls">
+              <button>◀</button>
+              <button>▶</button>
+            </div>
+          </div>
+
+          <div class="dj-card dj-1">
+            <div class="dj-name">Jerome Sydenham</div>
+          </div>
+          <div class="dj-card dj-2">
+            <div class="dj-name">Scarlett O'Malley</div>
+          </div>
+          <div class="dj-card dj-3">
+            <div class="dj-name">Mha Iri</div>
+          </div>
+
+          <div class="slider-dots compact">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span class="active"></span>
+          </div>
+        </section>
+      </section>
+
+      <section class="mi-beatport">
+        <div class="section-head">
+          <h2>Mi Beatport</h2>
+          <div class="mini-icons">
+            <button>▶</button>
+            <button>☰</button>
+            <button>＋</button>
+          </div>
+        </div>
+
+        <div class="empty-strip"></div>
+      </section>
+    </main>
+
+    <!-- RIGHT PANEL -->
+    <aside class="sidebar-right">
+      <div class="top10-panel">
+        <div class="panel-header">
+          <div class="panel-icons">
+            <button>▶</button>
+            <button>☰</button>
+            <button>＋</button>
+          </div>
+          <div class="panel-title">Beatport<span>Top10</span></div>
+        </div>
+
+        <div class="track-list">
+          <div class="track-item">
+            <div class="track-num">1</div>
+            <div class="track-info">
+              <div class="track-title">neck <span>Extended Mix</span></div>
+              <div class="track-artist">Mau P</div>
+              <div class="track-label">Black Book Records</div>
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-num">2</div>
+            <div class="track-info">
+              <div class="track-title">Loco Loco <span>Extended Mix</span></div>
+              <div class="track-artist">Reinier Zonneveld, GORDO (US)</div>
+              <div class="track-label">SPINNIN' RECORDS</div>
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-num">3</div>
+            <div class="track-info">
+              <div class="track-title">Out of My Mind <span>Extended Mix</span></div>
+              <div class="track-artist">Joshwa</div>
+              <div class="track-label">Hellbent Records</div>
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-num">4</div>
+            <div class="track-info">
+              <div class="track-title">Make My Day <span>Original Mix</span></div>
+              <div class="track-artist">ESSE (US)</div>
+              <div class="track-label">ESSEntial.</div>
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-num">5</div>
+            <div class="track-info">
+              <div class="track-title">Rushline <span>Extended Mix</span></div>
+              <div class="track-artist">Raxon</div>
+              <div class="track-label">Drumcode</div>
+            </div>
+          </div>
+
+          <div class="track-item">
+            <div class="track-num">6</div>
+            <div class="track-info">
+              <div class="track-title">The Signal <span>Original Mix</span></div>
+              <div class="track-artist">Space 92</div>
+              <div class="track-label">Filth on Acid</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="chat-bubble">💬</button>
+    </aside>
+  </div>
+
+  <!-- BOTTOM PLAYER -->
+  <footer class="player-bar">
+    <div class="player-left">
+      <div class="cover-thumb"></div>
+      <div class="track-meta">
+        <div class="now-title">Afterparty Extended Mix</div>
+        <div class="now-sub">Gaddi, HILLS (US)</div>
+        <div class="now-sub">Catch & Release</div>
+      </div>
+    </div>
+
+    <div class="player-center">
+      <div class="time-meta">
+        <span>1:41 / 4:14</span>
+        <span>132 bpm</span>
+        <span>Eb major</span>
+      </div>
+
+      <div class="waveform">
+        <div class="wave-left"></div>
+        <div class="playhead"></div>
+        <div class="wave-right"></div>
+      </div>
+    </div>
+
+    <div class="player-right">
+      <button class="pink-btn">MX$49 ▾</button>
+      <button class="icon-btn small">☷</button>
+      <button class="icon-btn small">🔊</button>
+      <button class="icon-btn small">⏮</button>
+      <button class="play-btn">▶</button>
+      <button class="icon-btn small">⏭</button>
+      <button class="icon-btn small">☰</button>
+    </div>
+  </footer>
+</body>
+</html>
