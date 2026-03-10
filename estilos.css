@@ -22,7 +22,7 @@
   --topbar-h: 56px;
   --player-h: 96px;
   --left-w: 260px;
-  --right-w: 420px;
+  --right-w: 280px;
 }
 
 html, body {
@@ -181,7 +181,7 @@ body {
   right: 0;
   bottom: var(--player-h);
   display: grid;
-  grid-template-columns: var(--left-w) 1fr var(--right-w);
+  grid-template-columns: var(--left-w) 1fr;
   gap: 0;
   min-width: 1200px; /* para parecerse a la captura */
 }
@@ -495,15 +495,23 @@ body {
 .sidebar-right {
   background: rgba(31,31,31,.95);
   border-left: 1px solid #2f2f2f;
-  padding: 18px 18px 18px 18px;
-  position: relative;
+  padding: 18px;
+  position: fixed;
+  right: 0;
+  top: var(--topbar-h);
+  bottom: var(--player-h);
+  width: var(--right-w);
   overflow: auto;
+  transition: transform 0.35s ease;
+  z-index: 40;
 }
 
 .top10-panel {
   background: #2d2d2d;
   border: 1px solid #373737;
   min-height: 530px;
+  max-width: 260px;
+  margin: auto;
 }
 
 .panel-header {
@@ -798,4 +806,23 @@ body {
   .app-shell {
     min-width: 1200px; /* mantenemos look escritorio para práctica */
   }
+}
+/* ===== BOTON DESPLEGAR TOP10 ===== */
+
+.toggle-top10{
+  position: fixed;
+  right: 10px;
+  top: 90px;
+  width:34px;
+  height:34px;
+  border-radius:6px;
+  border:1px solid #4b4b4b;
+  background:#3a3a3a;
+  color:#fff;
+  cursor:pointer;
+  z-index: 100;
+}
+
+.sidebar-right.oculto{
+  transform: translateX(100%);
 }

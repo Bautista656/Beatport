@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beatport UI Clone - Práctica ocho</title>
+
   <title>Beatport UI Clone - Práctica 3 versonamiento</title>
+
   <link rel="stylesheet" href="estilos.css" />
 </head>
 <body>
+  
+
   <!-- TOP BAR -->
   <header class="topbar">
     <div class="topbar-left">
@@ -49,6 +54,7 @@
         <li><a href="#"><span class="side-ico">♡</span> Mi Beatport</a></li>
         <li><a href="#"><span class="side-ico">☰</span> Colección</a></li>
         <li><a href="#"><span class="side-ico">⇩</span> Descargas</a></li>
+        <li><a href="#"><span class="side-ico">▷</span> Jonathan Pedro Torres Álvarez</a></li>
         <li><a href="#"><span class="side-ico">▷</span> Listas de musica 2026</a></li>
       </ul>
 
@@ -126,77 +132,87 @@
       </section>
     </main>
 
+<button class="toggle-top10">☰</button>
     <!-- RIGHT PANEL -->
-    <aside class="sidebar-right">
-      <div class="top10-panel">
-        <div class="panel-header">
-          <div class="panel-icons">
-            <button>▶</button>
-            <button>☰</button>
-            <button>＋</button>
-          </div>
-          <div class="panel-title">Beatport<span>Top10</span></div>
-        </div>
+<aside class="sidebar-right">
+  <div class="top10-panel">
 
-        <div class="track-list">
-          <div class="track-item">
-            <div class="track-num">1</div>
-            <div class="track-info">
-              <div class="track-title">neck <span>Extended Mix</span></div>
-              <div class="track-artist">Mau P</div>
-              <div class="track-label">Black Book Records</div>
-            </div>
-          </div>
+    <div class="panel-header">
 
-          <div class="track-item">
-            <div class="track-num">2</div>
-            <div class="track-info">
-              <div class="track-title">Loco Loco <span>Extended Mix</span></div>
-              <div class="track-artist">Reinier Zonneveld, GORDO (US)</div>
-              <div class="track-label">SPINNIN' RECORDS</div>
-            </div>
-          </div>
+      <!-- BOTON DESPLEGABLE -->
+      <button class="toggle-top10">☰</button>
 
-          <div class="track-item">
-            <div class="track-num">3</div>
-            <div class="track-info">
-              <div class="track-title">Out of My Mind <span>Extended Mix</span></div>
-              <div class="track-artist">Joshwa</div>
-              <div class="track-label">Hellbent Records</div>
-            </div>
-          </div>
+      <div class="panel-icons">
+        <button>▶</button>
+        <button>☰</button>
+        <button>＋</button>
+      </div>
 
-          <div class="track-item">
-            <div class="track-num">4</div>
-            <div class="track-info">
-              <div class="track-title">Make My Day <span>Original Mix</span></div>
-              <div class="track-artist">ESSE (US)</div>
-              <div class="track-label">ESSEntial.</div>
-            </div>
-          </div>
+      <div class="panel-title">Beatport<span>Top10</span></div>
 
-          <div class="track-item">
-            <div class="track-num">5</div>
-            <div class="track-info">
-              <div class="track-title">Rushline <span>Extended Mix</span></div>
-              <div class="track-artist">Raxon</div>
-              <div class="track-label">Drumcode</div>
-            </div>
-          </div>
+    </div>
 
-          <div class="track-item">
-            <div class="track-num">6</div>
-            <div class="track-info">
-              <div class="track-title">The Signal <span>Original Mix</span></div>
-              <div class="track-artist">Space 92</div>
-              <div class="track-label">Filth on Acid</div>
-            </div>
-          </div>
+    <div class="track-list">
+
+      <div class="track-item">
+        <div class="track-num">1</div>
+        <div class="track-info">
+          <div class="track-title">neck <span>Extended Mix</span></div>
+          <div class="track-artist">Mau P</div>
+          <div class="track-label">Black Book Records</div>
         </div>
       </div>
 
-      <button class="chat-bubble">💬</button>
-    </aside>
+      <div class="track-item">
+        <div class="track-num">2</div>
+        <div class="track-info">
+          <div class="track-title">Loco Loco <span>Extended Mix</span></div>
+          <div class="track-artist">Reinier Zonneveld, GORDO (US)</div>
+          <div class="track-label">SPINNIN' RECORDS</div>
+        </div>
+      </div>
+
+      <div class="track-item">
+        <div class="track-num">3</div>
+        <div class="track-info">
+          <div class="track-title">Out of My Mind <span>Extended Mix</span></div>
+          <div class="track-artist">Joshwa</div>
+          <div class="track-label">Hellbent Records</div>
+        </div>
+      </div>
+
+      <div class="track-item">
+        <div class="track-num">4</div>
+        <div class="track-info">
+          <div class="track-title">Make My Day <span>Original Mix</span></div>
+          <div class="track-artist">ESSE (US)</div>
+          <div class="track-label">ESSEntial.</div>
+        </div>
+      </div>
+
+      <div class="track-item">
+        <div class="track-num">5</div>
+        <div class="track-info">
+          <div class="track-title">Rushline <span>Extended Mix</span></div>
+          <div class="track-artist">Raxon</div>
+          <div class="track-label">Drumcode</div>
+        </div>
+      </div>
+
+      <div class="track-item">
+        <div class="track-num">6</div>
+        <div class="track-info">
+          <div class="track-title">The Signal <span>Original Mix</span></div>
+          <div class="track-artist">Space 92</div>
+          <div class="track-label">Filth on Acid</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <button class="chat-bubble">💬</button>
+</aside>
   </div>
 
   <!-- BOTTOM PLAYER -->
@@ -234,5 +250,15 @@
       <button class="icon-btn small">☰</button>
     </div>
   </footer>
+<script>
+const boton = document.querySelector(".toggle-top10");
+const panel = document.querySelector(".sidebar-right");
+
+if(boton){
+  boton.addEventListener("click", () => {
+    panel.classList.toggle("oculto");
+  });
+}
+</script>
 </body>
 </html>
